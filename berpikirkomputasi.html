@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Pembelajaran Interaktif - Berpikir Komputasional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-xl shadow-lg shadow-cyan-500/30">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Informatika X</span>
+            </div>
+            <nav class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#proposisi" class="hover:text-cyan-400 transition">Proposisi & Logika</a>
+                <a href="#penalaran" class="hover:text-cyan-400 transition">Penalaran & Inferensi</a>
+                <a href="#sistem-bilangan" class="hover:text-cyan-400 transition">Sistem Bilangan</a>
+                <a href="#simulator" class="hover:text-cyan-400 transition">Simulator & Alat</a>
+            </nav>
+            <a href="#simulator" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 px-4 py-2 rounded-xl text-sm font-bold transition shadow-lg shadow-cyan-500/20">
+                Uji Coba Interaktif
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 border border-cyan-800 rounded-full inline-block mb-4">
+                    Bab 1: Berpikir Komputasional
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+                    Kuasai Logika & <br><span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">Sistem Digital</span>
+                </h1>
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                    Media pembelajaran interaktif berbasis Informatika Kelas X SMK/MAK. Pelajari logika proposisi, metode penalaran deduktif/induktif, hingga konversi sistem bilangan secara visual dan responsif.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#simulator" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl text-white font-semibold shadow-lg shadow-cyan-500/25 hover:scale-105 transition">
+                        Mulai Simulasi Interaktif
+                    </a>
+                    <a href="#proposisi" class="px-6 py-3 glass-card rounded-xl text-slate-300 hover:text-white font-semibold border border-slate-700 hover:border-slate-500 transition">
+                        Pelajari Materi
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-xl opacity-30 animate-pulse"></div>
+                <img src="watermarked_img_1059011101753651316.jpg" alt="Berpikir Komputasional" class="relative rounded-2xl border border-slate-700 shadow-2xl object-cover w-full h-80 sm:h-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- Topik 1: Proposisi dan Logika Matematika -->
+    <section id="proposisi" class="py-16 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
+                <div class="md:w-1/2">
+                    <img src="watermarked_img_11479155937005031351.jpg" alt="Logika Proposisi" class="rounded-2xl border border-slate-800 shadow-xl object-cover w-full h-72">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-code-merge text-cyan-400"></i> Proposisi & Logika
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-4">
+                        <strong>Proposisi</strong> adalah pernyataan yang menggambarkan keadaan benar (B) atau salah (S) dalam bentuk kalimat. Terdapat 4 unsur utama: <em>Subjek, Predikat, Kopula, dan Kuantor</em>.
+                    </p>
+                    <div class="grid grid-cols-2 gap-3 text-sm">
+                        <div class="glass-card p-3 rounded-xl border border-slate-800">
+                            <span class="font-bold text-cyan-400 block mb-1">~ Negasi (Not)</span>
+                            Mebalikkan nilai kebenaran.
+                        </div>
+                        <div class="glass-card p-3 rounded-xl border border-slate-800">
+                            <span class="font-bold text-blue-400 block mb-1">∧ Konjungsi (And)</span>
+                            Benar HANYA JIKA keduanya benar.
+                        </div>
+                        <div class="glass-card p-3 rounded-xl border border-slate-800">
+                            <span class="font-bold text-indigo-400 block mb-1">∨ Disjungsi (Or)</span>
+                            Benar jika SALAH SATU bernilai benar.
+                        </div>
+                        <div class="glass-card p-3 rounded-xl border border-slate-800">
+                            <span class="font-bold text-purple-400 block mb-1">→ Implikasi (Jika...Maka)</span>
+                            Salah HANYA JIKA B → S.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topik 2: Penalaran & Logika Inferensi -->
+    <section id="penalaran" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-12">
+                <div class="md:w-1/2">
+                    <img src="watermarked_img_129373172828493579.jpg" alt="Penalaran Logika" class="rounded-2xl border border-slate-800 shadow-xl object-cover w-full h-72">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-lightbulb text-amber-400"></i> Penalaran & Logika Inferensi
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        <strong>Penalaran</strong> adalah proses berpikir berdasarkan pengamatan empiris untuk menghasilkan kesimpulan baru. <strong>Inferensi</strong> adalah proses penarikan kesimpulan berdasarkan fakta yang diketahui.
+                    </p>
+                    <div class="space-y-3 text-sm">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-arrow-down-wide-short text-cyan-400 text-lg mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Deduktif (Umum → Khusus)</strong>
+                                Silogisme: Premis 1 (Umum) + Premis 2 (Khusus) = Kesimpulan.<br>
+                                <span class="text-xs text-slate-400">Contoh: Semua manusia mati. Paidi manusia. Jadi Paidi akan mati.</span>
+                            </div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-arrow-up-wide-short text-emerald-400 text-lg mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Induktif (Khusus → Umum)</strong>
+                                Menarik kesimpulan umum berdasarkan pengamatan fakta-fakta individual.<br>
+                                <span class="text-xs text-slate-400">Contoh: Elang, lumba-lumba, dan kerbau memiliki mata → Semua hewan bermata.</span>
+                            </div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-puzzle-piece text-purple-400 text-lg mt-1"></i>
+                            <div>
+                                <strong class="text-white block">Abduktif (Penjelasan Terbaik)</strong>
+                                Memilih penjelasan yang paling rasional berdasarkan bukti terbatas.<br>
+                                <span class="text-xs text-slate-400">Contoh: Melihat asap dan bau gosong di dapur → Menyimpulkan ada makanan terbakar.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topik 3: Sistem Bilangan Digital -->
+    <section id="sistem-bilangan" class="py-16 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
+                <div class="md:w-1/2">
+                    <img src="watermarked_img_11368609272709972314.jpg" alt="Sistem Bilangan" class="rounded-2xl border border-slate-800 shadow-xl object-cover w-full h-72">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center gap-3">
+                        <i class="fa-solid fa-calculator text-emerald-400"></i> Sistem Bilangan Digital
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Sistem bilangan adalah cara mewakili besaran item fisik menggunakan basis angka tertentu dalam komputer dan perangkat elektronik.
+                    </p>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <span class="text-xl font-bold text-cyan-400 block mb-1">Desimal</span>
+                            <span class="text-xs text-slate-400 block">Basis 10</span>
+                            <p class="text-xs text-slate-300 mt-2">Angka 0 - 9</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <span class="text-xl font-bold text-emerald-400 block mb-1">Biner</span>
+                            <span class="text-xs text-slate-400 block">Basis 2 (Bit)</span>
+                            <p class="text-xs text-slate-300 mt-2">Angka 0 & 1 (OFF/ON)</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <span class="text-xl font-bold text-purple-400 block mb-1">Heksadesimal</span>
+                            <span class="text-xs text-slate-400 block">Basis 16</span>
+                            <p class="text-xs text-slate-300 mt-2">0-9 & A-F</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools & Simulators Section -->
+    <section id="simulator" class="py-16 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-3 bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                    Laboratorium & Simulator Interaktif
+                </h2>
+                <p class="text-slate-400">Uji pemahaman dan lakukan perhitungan logika & konversi secara real-time di bawah ini.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Tool 1: Interactive Truth Table Generator -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 glow-effect">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-cyan-400">
+                        <i class="fa-solid fa-table"></i> Generator Tabel Kebenaran
+                    </h3>
+                    <p class="text-xs text-slate-400 mb-4">Ubah status kebenaran input P dan Q untuk melihat hasil operasi logika secara otomatis.</p>
+                    
+                    <div class="flex gap-4 mb-6">
+                        <div class="flex-1">
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Pernyataann P</label>
+                            <button id="btnP" onclick="toggleState('P')" class="w-full py-3 rounded-xl font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 transition">
+                                TRUE (Benar)
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Pernyataan Q</label>
+                            <button id="btnQ" onclick="toggleState('Q')" class="w-full py-3 rounded-xl font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 transition">
+                                TRUE (Benar)
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-center p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <span>Negasi (~P)</span>
+                            <span id="resNegP" class="font-mono font-bold px-3 py-1 rounded bg-rose-500/20 text-rose-400">FALSE</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <span>Konjungsi (P ∧ Q)</span>
+                            <span id="resKonjungsi" class="font-mono font-bold px-3 py-1 rounded bg-emerald-500/20 text-emerald-400">TRUE</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <span>Disjungsi (P ∨ Q)</span>
+                            <span id="resDisjungsi" class="font-mono font-bold px-3 py-1 rounded bg-emerald-500/20 text-emerald-400">TRUE</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <span>Implikasi (P → Q)</span>
+                            <span id="resImplikasi" class="font-mono font-bold px-3 py-1 rounded bg-emerald-500/20 text-emerald-400">TRUE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 2: Real-time Number Converter -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 glow-effect">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-emerald-400">
+                        <i class="fa-solid fa-arrows-rotate"></i> Konverter Sistem Bilangan
+                    </h3>
+                    <p class="text-xs text-slate-400 mb-4">Masukkan nilai desimal untuk mengonversi langsung ke bentuk Biner dan Heksadesimal.</p>
+
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Bilangan Desimal (Basis 10)</label>
+                            <input type="number" id="numDecimal" value="199" oninput="convertNumber()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white font-mono focus:outline-none focus:border-cyan-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Bilangan Biner (Basis 2)</label>
+                            <input type="text" id="numBinary" readonly class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-emerald-400 font-mono focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Bilangan Heksadesimal (Basis 16)</label>
+                            <input type="text" id="numHex" readonly class="w-full bg-slate-900/60 border border-slate-800 rounded-xl px-4 py-3 text-purple-400 font-mono uppercase focus:outline-none">
+                        </div>
+                    </div>
+                    <div class="mt-4 p-3 rounded-xl bg-slate-900/40 text-xs text-slate-400 border border-slate-800">
+                        <i class="fa-solid fa-circle-info text-cyan-400 mr-1"></i>
+                        Misal: Desimal <strong>199</strong> = Biner <strong>11000111</strong> = Heksadesimal <strong>C7</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Interaktif Mini -->
+            <div class="mt-12 glass-card p-8 rounded-2xl border border-slate-800">
+                <h3 class="text-2xl font-bold mb-6 text-center text-white flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-question text-amber-400"></i> Mini Kuis Interaktif Logika
+                </h3>
+                <div class="max-w-2xl mx-auto space-y-6">
+                    <div class="bg-slate-900/70 p-5 rounded-xl border border-slate-800">
+                        <p class="font-medium text-slate-200 mb-3">Soal: Manakah jenis penalaran yang memilih kesimpulan terbaik dari sekian banyak argumentasi yang ada?</p>
+                        <div class="grid grid-cols-3 gap-3">
+                            <button onclick="checkQuiz(this, false)" class="py-2 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold transition">Deduktif</button>
+                            <button onclick="checkQuiz(this, false)" class="py-2 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold transition">Induktif</button>
+                            <button onclick="checkQuiz(this, true)" class="py-2 px-4 rounded-lg bg-slate-800 hover:bg-slate-700 text-sm font-semibold transition">Abduktif</button>
+                        </div>
+                        <p class="quiz-feedback hidden mt-3 text-sm font-bold"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 Modul Pembelajaran Interaktif Informatika Kelas X - Berpikir Komputasional.</p>
+        </div>
+    </footer>
+
+    <!-- Logic JavaScript -->
+    <script>
+        let stateP = true;
+        let stateQ = true;
+
+        function toggleState(varName) {
+            if(varName === 'P') stateP = !stateP;
+            if(varName === 'Q') stateQ = !stateQ;
+
+            updateBtn('btnP', stateP);
+            updateBtn('btnQ', stateQ);
+            calculateLogic();
+        }
+
+        function updateBtn(id, state) {
+            const btn = document.getElementById(id);
+            if(state) {
+                btn.innerText = "TRUE (Benar)";
+                btn.className = "w-full py-3 rounded-xl font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 transition";
+            } else {
+                btn.innerText = "FALSE (Salah)";
+                btn.className = "w-full py-3 rounded-xl font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40 transition";
+            }
+        }
+
+        function calculateLogic() {
+            const negP = !stateP;
+            const konjungsi = stateP && stateQ;
+            const disjungsi = stateP || stateQ;
+            const implikasi = (!stateP) || stateQ;
+
+            renderBadge('resNegP', negP);
+            renderBadge('resKonjungsi', konjungsi);
+            renderBadge('resDisjungsi', disjungsi);
+            renderBadge('resImplikasi', implikasi);
+        }
+
+        function renderBadge(id, val) {
+            const el = document.getElementById(id);
+            el.innerText = val ? "TRUE" : "FALSE";
+            el.className = val 
+                ? "font-mono font-bold px-3 py-1 rounded bg-emerald-500/20 text-emerald-400" 
+                : "font-mono font-bold px-3 py-1 rounded bg-rose-500/20 text-rose-400";
+        }
+
+        function convertNumber() {
+            const decInput = document.getElementById('numDecimal').value;
+            if (decInput === "" || isNaN(decInput)) {
+                document.getElementById('numBinary').value = "";
+                document.getElementById('numHex').value = "";
+                return;
+            }
+            const val = parseInt(decInput, 10);
+            if (val < 0) {
+                document.getElementById('numBinary').value = "Masukkan angka positif";
+                document.getElementById('numHex').value = "Masukkan angka positif";
+                return;
+            }
+            document.getElementById('numBinary').value = val.toString(2);
+            document.getElementById('numHex').value = val.toString(16).toUpperCase();
+        }
+
+        function checkQuiz(btn, isCorrect) {
+            const feedback = btn.parentElement.nextElementSibling;
+            feedback.classList.remove('hidden', 'text-emerald-400', 'text-rose-400');
+            if(isCorrect) {
+                feedback.innerText = "✓ Tepat sekali! Penalaran Abduktif memilih argumentasi/penjelasan terbaik.";
+                feedback.classList.add('text-emerald-400');
+            } else {
+                feedback.innerText = "✗ Kurang tepat. Coba ingat kembali pengertian penalaran Abduktif!";
+                feedback.classList.add('text-rose-400');
+            }
+        }
+
+        // Initialize default values
+        convertNumber();
+    </script>
+</body>
+</html>
